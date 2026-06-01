@@ -1,7 +1,0 @@
-
-body{font-family:Arial,sans-serif;margin:0}
-.nav{display:flex;justify-content:space-between;padding:1rem;background:#0a2540;color:#fff}
-.hero{height:70vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#e9eef5}
-section{padding:40px}
-.stats{display:flex;gap:20px}
-.dark{background:#111;color:#eee}
