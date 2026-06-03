@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Dalam Negri BEM PM Universitas Udayana</title>
+<title>Dalam Negeri BEM PM Universitas Udayana</title>
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 <style>
@@ -12,7 +12,7 @@ body{font-family:Segoe UI,sans-serif;background:#f4f7fb;color:#222;transition:.3
 body.dark{background:#111827;color:#f3f4f6}
 nav{position:fixed;top:0;width:100%;z-index:999;display:flex;justify-content:space-between;padding:15px 8%;background:rgba(0,0,0,.75);backdrop-filter:blur(10px)}
 nav a{color:white;text-decoration:none;margin:0 10px}
-.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80');background-size:cover;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('assets/hero.jpg');background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
 .hero h1{font-size:4rem}
 .btn{background:#fbbf24;color:#000;padding:12px 25px;border-radius:30px;text-decoration:none;display:inline-block;margin-top:20px}
 section{padding:90px 8%}
@@ -20,14 +20,28 @@ section{padding:90px 8%}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
 .card{background:white;padding:25px;border-radius:18px;box-shadow:0 5px 20px rgba(0,0,0,.1);transition:.3s}
 .dark .card{background:#1f2937}
-.card:hover{transform:translateY(-8px)}
+.card:hover,.member-card:hover{transform:translateY(-8px)}
 .stats{text-align:center}
-.stats h3{font-size:2rem}
 .timeline{border-left:3px solid #fbbf24;padding-left:20px}
 footer{background:#0f172a;color:white;text-align:center;padding:30px}
 input,textarea{width:100%;padding:12px;margin:10px 0;border:1px solid #ccc;border-radius:10px}
 button{padding:12px 20px;border:none;border-radius:10px;cursor:pointer}
 .theme{background:#fbbf24}
+
+.member-card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+transition:.4s;
+text-align:center;
+}
+.dark .member-card{background:#1f2937}
+.member-card img{width:100%;height:300px;object-fit:cover}
+.member-info{padding:20px}
+.social a{color:#f59e0b;font-size:20px;text-decoration:none}
+.leader-container{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin-bottom:40px}
+.staff-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
 </style>
 </head>
 <body>
@@ -52,9 +66,9 @@ button{padding:12px 20px;border:none;border-radius:10px;cursor:pointer}
 </header>
 
 <section id="tentang">
-<h2 class="title" data-aos="fade-down">Tentang Dagri</h2>
-<div class="card" data-aos="fade-up">
-Kementrian Dalam Negeri Badan Eksekutif Mahasiswa Pemerintahan Mahasiswa Univesitas Udayana. Kementerian Dalam Negeri memegang peran penting sebagai penghubung antara BEM PM Universitas Udayana (Unud) dan berbagai lembaga di dalam kampus. Kementerian ini bertanggung jawab menjalin koordinasi serta menjadi penghubung yang baik dengan 13 fakultas di Unud, Unit Kegiatan Mahasiswa (UKM), paguyuban daerah, forum agama, serta lembaga internal lainnya. Melalui komunikasi yang terarah dan kerja sama yang solid, kementerian ini berupaya menciptakan suasana yang penuh kolaborasi dan harmonis bagi seluruh organisasi di internal Universitas Udayana.
+<h2 class="title">Tentang Dagri</h2>
+<div class="card">
+Kementrian Dalam Negeri Badan Eksekutif Mahasiswa Pemerintahan Mahasiswa Universitas Udayana.
 </div>
 </section>
 
@@ -80,20 +94,142 @@ Kementrian Dalam Negeri Badan Eksekutif Mahasiswa Pemerintahan Mahasiswa Univesi
 
 <section id="kabinet">
 <h2 class="title">Struktur Kementrian</h2>
-<div class="grid">
-<div class="card">Mentri</div>
-<div class="card">Wakil Mentri</div>
-<div class="card">Staff</div>
+
+<div class="leader-container">
+<div class="member-card">
+<img src="assets/mentri.jpg">
+<div class="member-info">
+<h3>Nama Mentri</h3>
+<p>Mentri Dalam Negeri</p>
+<div class="social"><a href="#"><i class="fab fa-instagram"></i></a></div>
+</div>
+</div>
+
+<div class="member-card">
+<img src="assets/wakil.jpg">
+<div class="member-info">
+<h3>Nama Wakil Mentri</h3>
+<p>Wakil Mentri Dalam Negeri</p>
+<div class="social"><a href="#"><i class="fab fa-instagram"></i></a></div>
+</div>
+</div>
+</div>
+
+<div class="staff-container">
+
+<div class="member-card">
+<img src="assets/staff1.jpg">
+<div class="member-info">
+<h3>Staff 1</h3>
+<p>Staff Dalam Negeri</p>
+</div>
+</div>
+
+<div class="member-card">
+<img src="assets/staff2.jpg">
+<div class="member-info">
+<h3>Staff 2</h3>
+<p>Staff Dalam Negeri</p>
+</div>
+</div>
+
+<div class="member-card">
+<img src="assets/staff3.jpg">
+<div class="member-info">
+<h3>Staff 3</h3>
+<p>Staff Dalam Negeri</p>
+</div>
+</div>
+
+<div class="member-card">
+<img src="assets/staff4.jpg">
+<div class="member-info">
+<h3>Staff 4</h3>
+<p>Staff Dalam Negeri</p>
+</div>
+</div>
+
+<div class="member-card">
+<img src="assets/staff5.jpg">
+<div class="member-info">
+<h3>Staff 5</h3>
+<p>Staff Dalam Negeri</p>
+</div>
+</div>
+
+<div class="member-card">
+<img src="assets/staff6.jpg">
+<div class="member-info">
+<h3>Staff 6</h3>
+<p>Staff Dalam Negeri</p>
+</div>
+</div>
+
+<div class="member-card">
+<img src="assets/staff7.jpg">
+<div class="member-info">
+<h3>Staff 7</h3>
+<p>Staff Dalam Negeri</p>
+</div>
+</div>
+
+<div class="member-card">
+<img src="assets/staff8.jpg">
+<div class="member-info">
+<h3>Staff 8</h3>
+<p>Staff Dalam Negeri</p>
+</div>
+</div>
+
+<div class="member-card">
+<img src="assets/staff9.jpg">
+<div class="member-info">
+<h3>Staff 9</h3>
+<p>Staff Dalam Negeri</p>
+</div>
+</div>
+
+<div class="member-card">
+<img src="assets/staff10.jpg">
+<div class="member-info">
+<h3>Staff 10</h3>
+<p>Staff Dalam Negeri</p>
+</div>
+</div>
+
+<div class="member-card">
+<img src="assets/staff11.jpg">
+<div class="member-info">
+<h3>Staff 11</h3>
+<p>Staff Dalam Negeri</p>
+</div>
+</div>
+
+<div class="member-card">
+<img src="assets/staff12.jpg">
+<div class="member-info">
+<h3>Staff 12</h3>
+<p>Staff Dalam Negeri</p>
+</div>
+</div>
+
+<div class="member-card">
+<img src="assets/staff13.jpg">
+<div class="member-info">
+<h3>Staff 13</h3>
+<p>Staff Dalam Negeri</p>
+</div>
+</div>
+
 </div>
 </section>
 
 <section>
 <h2 class="title">Timeline Kegiatan</h2>
 <div class="timeline">
-<p>April-Juni - Roadshow 13 Fakultas</p><br>
-<p>Mei-Juni - Roadshow Paguyuban & Forum Agama</p><br>
-<p>Juli - UKM EXPO</p><br>
-<p>-----</p>
+<p>April–Juni - Roadshow 13 Fakultas</p><br>
+<p>Mei–Juni - Roadshow Paguyuban & Forum Agama</p><br>
+<p>Juli - UKM EXPO</p>
 </div>
 </section>
 
